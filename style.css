@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.sale {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 10px 20px;
+  position: absolute;
+  top: -15px;
+  left: -50px;
+}
+.shoe-image {
+  width: 25%;
+  height: auto;
+  /*margin-bottom: 20px;
+  margin-right: 40px;*/
+}
+
+.product {
+  border-style: solid;
+  border-width: 5px;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+.product-title {
+  text-transform: uppercase;
+  font-size: 25px;
+  background-color: ivory;
+  text-align: center;
+  padding: 10px;
+}
+.product-details {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.price {
+  font-size: 20px;
+}
+.shipping {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #777;
+  font-weight: bold;
+  /*margin-bottom: 20px;*/
+}
+
+.readytodress {
+  margin-bottom: 10px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration-line: none;
+}
+.box {
+  /*margin-top: 12px;*/
+}
+.box1 {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  display: inline-block;
+  /*margin-right: 5px;*/
+}
+.box2 {
+  height: 20px;
+  width: 20px;
+  background-color: blue;
+  display: inline-block;
+  /*margin-right: 5px;*/
+}
+.box3 {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  display: inline-block;
+  /*margin-right: 5px;*/
+}
+.box4 {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(219, 219, 137);
+  display: inline-block;
+  /*margin-right: 5px;*/
+}
+.box5 {
+  height: 20px;
+  width: 20px;
+  background-color: green;
+  display: inline-block;
+  /*margin-right: 5px;*/
+}
+.box6 {
+  height: 20px;
+  width: 20px;
+  background-color: brown;
+  display: inline-block;
+  /*margin-right: 5px;*/
+}
+
+.product-specialities-list {
+  list-style: square;
+  margin-left: 20px;
+}
+/*.product-specialities-list li {
+  margin-bottom: 5px;
+}*/
+.add-cart {
+  background-color: black;
+  border: none;
+  color: aliceblue;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  padding: 15px;
+  width: 100%;
+}
+.add-cart:hover {
+  background-color: white;
+  color: black;
+  border-top: solid;
+  cursor: pointer;
+}
+
+/*Using Float*/
+
+/*.container1 {
+  width: 240px;
+  margin-right: 40px;
+  float: left;
+  padding-top: 20px;
+}
+
+.container2 {
+  width: 240px;
+  padding-top: 20px;
+  float: left;
+}
+.shoe-image {
+  float: left;
+}
+.price {
+  float: left;
+}
+.shipping {
+  float: right;
+  padding-top: 5px;
+}
+.readytodress {
+  clear: both;
+}*/
+/*Using Flexbox*/
+.flex-container {
+  display: flex;
+  /*align-items-flex-start;*/
+  gap: 30px;
+}
+.container1 {
+  flex: 1;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.container2 {
+  flex: 1;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.box {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+}
+.price-shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
